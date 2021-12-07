@@ -270,7 +270,7 @@ def saveFinalImage(winName, img, inName):  # 保存计算结果产生照片
     return str(Path("output/"+inName+"/"+inName+"-"+winName+".jpg"))
 
 
-def getJpgImage(image_path):  # 读取目录下所有的jpg图片
+def getJpgImage(image_path):  # 读取目录下所有的图片
     file_name = glob(image_path+"/*jpg")
     file_name += glob(image_path+"/*png")
     file_name += glob(image_path+"/*bmp")
