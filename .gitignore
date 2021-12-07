@@ -1,0 +1,8 @@
+.vscode
+output
+temp
+*.jpg
+*.bmp
+*.png
+*.jpeg
+*.tar.*
