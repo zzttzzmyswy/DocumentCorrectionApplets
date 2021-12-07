@@ -289,7 +289,7 @@ def delDir(path):
 
 
 if __name__ == "__main__":
-    print("文档自动矫正并进行简单识别程序")
+    print("文档自动矫正并可以进行简单识别程序-ZZT")
     # 待处理文件列表
     fileList = getJpgImage(os.path.dirname(os.path.abspath(__file__)))
     # 删除之前的处理结果
