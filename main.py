@@ -28,7 +28,7 @@ access_token = response.json().get("access_token")
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)  # 日志等级总开关
 # 设置日志文件相关
-fileLog = logging.FileHandler('runlog.log', mode='a+')
+fileLog = logging.FileHandler('runlog.log', mode='a+', encoding="utf-8")
 fileLog.setLevel(logging.DEBUG)  # 输出到file的日志等级
 fileLog.setFormatter(
     logging.Formatter(
@@ -159,6 +159,15 @@ def fContours(img, edged):
     return res, screenCnt
 
 
+def adaptreThre(img, size):
+    # 自适应区域阈值化
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    ret = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+                                cv2.THRESH_BINARY,
+                                int((140 * size) / 2) * 2 + 1, 15)
+    return ret
+
+
 def getMad(s):  # 利用绝对中位差剔除异常值
     median = np.median(s)
     constant = 1.4826
@@ -216,6 +225,10 @@ def documentCorrection(file_path):  # 文档图像处理主函数
         if traimg is not None:
             baiduOCRFile = saveFinalImage("轮廓识别梯形矫正处理结果", traimg, fileName)
             baiduOCR(baiduOCRFile, "轮廓识别梯形矫正处理结果")
+            thFile = adaptreThre(traimg,
+                                 (traimg.shape[1] / 1200.0) * 0.5 + 0.5)
+            baiduOCRFile = saveFinalImage("梯形矫正自适应区域二值化处理结果", thFile, fileName)
+            baiduOCR(baiduOCRFile, "梯形矫正自适应区域二值化处理结果")
         else:
             logging.warning(file_path + "文件没有正确地轮廓识别")
     else:
