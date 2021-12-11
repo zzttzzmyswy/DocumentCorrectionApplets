@@ -218,7 +218,7 @@ def documentCorrection(file_path):  # 文档图像处理主函数
     saveIntermediateImage("5.腐蚀并膨胀后图像", expandImage, fileName)
     # 边缘检测
     cannyImage = cv2.Canny(expandImage, 50, 150)
-    saveIntermediateImage("6.Canny算子边缘检测下载", cannyImage, fileName)
+    saveIntermediateImage("6.Canny算子边缘检测", cannyImage, fileName)
     # 轮廓检测
     contours, contoursp = fContours(srcy, cannyImage)
     if contoursp is not None:
