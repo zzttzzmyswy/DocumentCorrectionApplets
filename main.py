@@ -5,7 +5,6 @@ import logging
 import math
 import os
 import shutil
-import time
 from glob import glob
 from pathlib import Path
 
@@ -219,14 +218,14 @@ def documentCorrection(file_path):  # 文档图像处理主函数
     contours, contoursp = fContours(srcy, cannyImage)
     if contoursp is not None:
         saveIntermediateImage("7.轮廓检测图像", contours, fileName)
-        traimg = findPointTransform(
+        findPointImg = findPointTransform(
             src,
             contoursp.reshape(4, 2) * (src.shape[1] / 1200.0))
-        if traimg is not None:
-            baiduOCRFile = saveFinalImage("轮廓识别梯形矫正处理结果", traimg, fileName)
+        if findPointImg is not None:
+            baiduOCRFile = saveFinalImage("轮廓识别梯形矫正处理结果", findPointImg, fileName)
             baiduOCR(baiduOCRFile, "轮廓识别梯形矫正处理结果")
-            thFile = adaptreThre(traimg,
-                                 (traimg.shape[1] / 1200.0) * 0.5 + 0.5)
+            thFile = adaptreThre(findPointImg,
+                                 (findPointImg.shape[1] / 1200.0) * 0.5 + 0.5)
             baiduOCRFile = saveFinalImage("梯形矫正自适应区域二值化处理结果", thFile, fileName)
             baiduOCR(baiduOCRFile, "梯形矫正自适应区域二值化处理结果")
         else:
