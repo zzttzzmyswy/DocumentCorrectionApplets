@@ -153,7 +153,7 @@ def fContours(img, edged):
             # 之前使用sorted对轮廓面积进行了排序，所以screenCnt会自动取轮廓面积的最大值
             break
     if screenCnt is None:
-        return img
+        return img, None
     res = cv2.drawContours(img, [screenCnt], -1, (0, 255, 0), 3)
     return res, screenCnt
 
