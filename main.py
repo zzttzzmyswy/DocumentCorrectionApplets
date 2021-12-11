@@ -131,8 +131,8 @@ def findPointTransform(image, pts):  # 透视变换
 
 def fContours(img, edged):
     # 轮廓检测
-    contours, hierarchy = cv2.findContours(edged.copy(), cv2.RETR_LIST,
-                                           cv2.CHAIN_APPROX_SIMPLE)
+    contours, _ = cv2.findContours(edged.copy(), cv2.RETR_LIST,
+                                   cv2.CHAIN_APPROX_SIMPLE)
     cnts = sorted(contours, key=cv2.contourArea, reverse=True)[:5]
     screenCnt = None
     # 遍历轮廓
