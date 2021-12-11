@@ -145,7 +145,7 @@ def fContours(img, edged):
         if len(approx) == 4:
             screenCnt = approx
             cont = cv2.contourArea(c)
-            logging.debug("边缘检测预估文档面积：" + str(cont))
+            logging.debug("边缘检测预估文档面积:" + str(cont))
             if cont < 200000:
                 logging.warning("边缘检测预估文档面积过小，轮廓识别梯形矫正结果可能不正确")
                 # 当预估面积过小时抛弃此次运算
@@ -295,7 +295,7 @@ def documentCorrection(file_path):  # 文档图像处理主函数
                           fileName)
     # 对经过处理的线的角度进行求均值
     thera = np.mean(theras)
-    logging.info("旋转角度：" + ("逆时针" if thera > 0 else "顺时针 ") +
+    logging.info("旋转角度:" + ("逆时针" if thera > 0 else "顺时针 ") +
                  str(round(thera, 2)) + " 度")
     # 使用求得的偏移角度均值来对图像进行旋转
     rotateImg = rotate(src, -thera)
