@@ -81,3 +81,113 @@
 2021-12-10 10:45:00,367 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.2cc89ec226bfe4e19ed0e9e636c8b536.2592000.1641696252.282335-25263167 HTTP/1.1" 200 None
 2021-12-10 10:45:00,372 - main.py[line:85] - INFO: 旋转矫正处理结果识别准确率（仅供参考）:94.53%
 2021-12-10 10:45:00,377 - main.py[line:347] - INFO: 文档图片文件处理完毕，处理结果在optupt文件夹下，处理中间产物在temp文件夹下
+2021-12-11 11:41:38,650 - main.py[line:340] - INFO: 文档自动矫正并可以进行简单识别程序-ZZT
+2021-12-11 11:41:38,668 - main.py[line:351] - INFO: ---------------------------------------------------
+2021-12-11 11:41:38,669 - main.py[line:352] - INFO: 开始处理文件5.jpg:
+2021-12-11 11:41:40,300 - main.py[line:148] - DEBUG: 边缘检测预估文档面积：662085.5
+2021-12-11 11:41:40,727 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:41:42,152 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.1323daead1b73d2a7f2802fed60754fa.2592000.1641786098.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:41:42,156 - main.py[line:84] - INFO: 轮廓识别梯形矫正处理结果识别准确率（仅供参考）:95.3%
+2021-12-11 11:41:43,122 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:41:44,199 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.1323daead1b73d2a7f2802fed60754fa.2592000.1641786098.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:41:44,205 - main.py[line:84] - INFO: 梯形矫正自适应区域二值化处理结果识别准确率（仅供参考）:96.39%
+2021-12-11 11:41:44,694 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:41:47,375 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.1323daead1b73d2a7f2802fed60754fa.2592000.1641786098.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:41:47,381 - main.py[line:84] - INFO: 梯形矫正直方图均衡化处理结果识别准确率（仅供参考）:95.26%
+2021-12-11 11:41:47,498 - main.py[line:276] - DEBUG: 自动确认正常角度范围: 7.62度 - 26.01度
+2021-12-11 11:41:47,640 - main.py[line:297] - INFO: 旋转角度：逆时针17.16 度
+2021-12-11 11:41:48,878 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:41:51,301 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.1323daead1b73d2a7f2802fed60754fa.2592000.1641786098.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:41:51,308 - main.py[line:84] - INFO: 旋转矫正处理结果识别准确率（仅供参考）:96.24%
+2021-12-11 11:41:51,311 - main.py[line:351] - INFO: ---------------------------------------------------
+2021-12-11 11:41:51,311 - main.py[line:352] - INFO: 开始处理文件1.jpg:
+2021-12-11 11:41:52,764 - main.py[line:148] - DEBUG: 边缘检测预估文档面积：65259.0
+2021-12-11 11:41:52,764 - main.py[line:150] - WARNING: 边缘检测预估文档面积过小，轮廓识别梯形矫正结果可能不正确
+2021-12-11 11:41:52,880 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:41:53,601 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.1323daead1b73d2a7f2802fed60754fa.2592000.1641786098.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:41:53,605 - main.py[line:84] - INFO: 轮廓识别梯形矫正处理结果识别准确率（仅供参考）:97.76%
+2021-12-11 11:41:53,661 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:41:54,644 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.1323daead1b73d2a7f2802fed60754fa.2592000.1641786098.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:41:54,650 - main.py[line:84] - INFO: 梯形矫正自适应区域二值化处理结果识别准确率（仅供参考）:99.11%
+2021-12-11 11:41:54,712 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:41:55,464 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.1323daead1b73d2a7f2802fed60754fa.2592000.1641786098.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:41:55,470 - main.py[line:84] - INFO: 梯形矫正直方图均衡化处理结果识别准确率（仅供参考）:91.35%
+2021-12-11 11:41:55,614 - main.py[line:276] - DEBUG: 自动确认正常角度范围: 6.92度 - 17.27度
+2021-12-11 11:41:55,733 - main.py[line:297] - INFO: 旋转角度：逆时针12.3 度
+2021-12-11 11:41:56,761 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:41:59,560 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.1323daead1b73d2a7f2802fed60754fa.2592000.1641786098.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:41:59,566 - main.py[line:84] - INFO: 旋转矫正处理结果识别准确率（仅供参考）:95.48%
+2021-12-11 11:41:59,571 - main.py[line:351] - INFO: ---------------------------------------------------
+2021-12-11 11:41:59,571 - main.py[line:352] - INFO: 开始处理文件3.jpg:
+2021-12-11 11:42:01,170 - main.py[line:148] - DEBUG: 边缘检测预估文档面积：890978.5
+2021-12-11 11:42:01,730 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:42:04,169 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.1323daead1b73d2a7f2802fed60754fa.2592000.1641786098.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:42:04,176 - main.py[line:84] - INFO: 轮廓识别梯形矫正处理结果识别准确率（仅供参考）:96.57%
+2021-12-11 11:42:05,423 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:42:07,682 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.1323daead1b73d2a7f2802fed60754fa.2592000.1641786098.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:42:07,689 - main.py[line:84] - INFO: 梯形矫正自适应区域二值化处理结果识别准确率（仅供参考）:95.82%
+2021-12-11 11:42:08,306 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:42:11,236 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.1323daead1b73d2a7f2802fed60754fa.2592000.1641786098.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:42:11,242 - main.py[line:84] - INFO: 梯形矫正直方图均衡化处理结果识别准确率（仅供参考）:96.2%
+2021-12-11 11:42:11,349 - main.py[line:276] - DEBUG: 自动确认正常角度范围: 5.65度 - 22.4度
+2021-12-11 11:42:11,472 - main.py[line:297] - INFO: 旋转角度：逆时针14.85 度
+2021-12-11 11:42:12,905 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:42:17,074 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.1323daead1b73d2a7f2802fed60754fa.2592000.1641786098.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:42:17,081 - main.py[line:84] - INFO: 旋转矫正处理结果识别准确率（仅供参考）:95.97%
+2021-12-11 11:42:17,094 - main.py[line:351] - INFO: ---------------------------------------------------
+2021-12-11 11:42:17,094 - main.py[line:352] - INFO: 开始处理文件6.jpg:
+2021-12-11 11:46:33,170 - main.py[line:344] - INFO: 文档自动矫正并可以进行简单识别程序-ZZT
+2021-12-11 11:46:33,207 - main.py[line:355] - INFO: ---------------------------------------------------
+2021-12-11 11:46:33,208 - main.py[line:356] - INFO: 开始处理文件5.jpg:
+2021-12-11 11:46:34,702 - main.py[line:148] - DEBUG: 边缘检测预估文档面积：662085.5
+2021-12-11 11:46:35,177 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:46:37,982 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.cc0e62602ca1e91dfb496cf1d724fbb7.2592000.1641786393.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:46:37,988 - main.py[line:84] - INFO: 轮廓识别梯形矫正处理结果识别准确率（仅供参考）:95.3%
+2021-12-11 11:46:38,969 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:46:40,234 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.cc0e62602ca1e91dfb496cf1d724fbb7.2592000.1641786393.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:46:40,240 - main.py[line:84] - INFO: 梯形矫正自适应区域二值化处理结果识别准确率（仅供参考）:96.39%
+2021-12-11 11:46:40,898 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:46:43,205 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.cc0e62602ca1e91dfb496cf1d724fbb7.2592000.1641786393.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:46:43,212 - main.py[line:84] - INFO: 梯形矫正直方图均衡化处理结果识别准确率（仅供参考）:91.32%
+2021-12-11 11:46:43,304 - main.py[line:280] - DEBUG: 自动确认正常角度范围: 7.62度 - 26.01度
+2021-12-11 11:46:43,420 - main.py[line:301] - INFO: 旋转角度：逆时针17.16 度
+2021-12-11 11:46:44,546 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:46:47,096 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.cc0e62602ca1e91dfb496cf1d724fbb7.2592000.1641786393.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:46:47,102 - main.py[line:84] - INFO: 旋转矫正处理结果识别准确率（仅供参考）:96.24%
+2021-12-11 11:46:47,105 - main.py[line:355] - INFO: ---------------------------------------------------
+2021-12-11 11:46:47,105 - main.py[line:356] - INFO: 开始处理文件1.jpg:
+2021-12-11 11:46:48,590 - main.py[line:148] - DEBUG: 边缘检测预估文档面积：65259.0
+2021-12-11 11:46:48,590 - main.py[line:150] - WARNING: 边缘检测预估文档面积过小，轮廓识别梯形矫正结果可能不正确
+2021-12-11 11:46:48,697 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:46:49,450 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.cc0e62602ca1e91dfb496cf1d724fbb7.2592000.1641786393.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:46:49,455 - main.py[line:84] - INFO: 轮廓识别梯形矫正处理结果识别准确率（仅供参考）:97.76%
+2021-12-11 11:46:49,507 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:46:50,167 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.cc0e62602ca1e91dfb496cf1d724fbb7.2592000.1641786393.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:46:50,172 - main.py[line:84] - INFO: 梯形矫正自适应区域二值化处理结果识别准确率（仅供参考）:99.11%
+2021-12-11 11:46:50,229 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:46:51,090 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.cc0e62602ca1e91dfb496cf1d724fbb7.2592000.1641786393.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:46:51,096 - main.py[line:84] - INFO: 梯形矫正直方图均衡化处理结果识别准确率（仅供参考）:93.16%
+2021-12-11 11:46:51,219 - main.py[line:280] - DEBUG: 自动确认正常角度范围: 6.92度 - 17.27度
+2021-12-11 11:46:51,338 - main.py[line:301] - INFO: 旋转角度：逆时针12.3 度
+2021-12-11 11:46:52,367 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:46:55,491 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.cc0e62602ca1e91dfb496cf1d724fbb7.2592000.1641786393.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:46:55,496 - main.py[line:84] - INFO: 旋转矫正处理结果识别准确率（仅供参考）:95.48%
+2021-12-11 11:46:55,501 - main.py[line:355] - INFO: ---------------------------------------------------
+2021-12-11 11:46:55,502 - main.py[line:356] - INFO: 开始处理文件3.jpg:
+2021-12-11 11:46:57,111 - main.py[line:148] - DEBUG: 边缘检测预估文档面积：890978.5
+2021-12-11 11:46:57,647 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:47:00,306 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.cc0e62602ca1e91dfb496cf1d724fbb7.2592000.1641786393.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:47:00,312 - main.py[line:84] - INFO: 轮廓识别梯形矫正处理结果识别准确率（仅供参考）:96.57%
+2021-12-11 11:47:01,598 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:47:04,093 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.cc0e62602ca1e91dfb496cf1d724fbb7.2592000.1641786393.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:47:04,101 - main.py[line:84] - INFO: 梯形矫正自适应区域二值化处理结果识别准确率（仅供参考）:95.82%
+2021-12-11 11:47:04,953 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:47:08,598 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.cc0e62602ca1e91dfb496cf1d724fbb7.2592000.1641786393.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:47:08,603 - main.py[line:84] - INFO: 梯形矫正直方图均衡化处理结果识别准确率（仅供参考）:93.53%
+2021-12-11 11:47:08,714 - main.py[line:280] - DEBUG: 自动确认正常角度范围: 5.65度 - 22.4度
+2021-12-11 11:47:08,840 - main.py[line:301] - INFO: 旋转角度：逆时针14.85 度
+2021-12-11 11:47:10,149 - connectionpool.py[line:957] - DEBUG: Starting new HTTPS connection (1): aip.baidubce.com:443
+2021-12-11 11:47:14,025 - connectionpool.py[line:428] - DEBUG: https://aip.baidubce.com:443 "POST /rest/2.0/ocr/v1/accurate_basic?access_token=24.cc0e62602ca1e91dfb496cf1d724fbb7.2592000.1641786393.282335-25263167 HTTP/1.1" 200 None
+2021-12-11 11:47:14,033 - main.py[line:84] - INFO: 旋转矫正处理结果识别准确率（仅供参考）:95.97%
+2021-12-11 11:47:14,040 - main.py[line:355] - INFO: ---------------------------------------------------
+2021-12-11 11:47:14,041 - main.py[line:356] - INFO: 开始处理文件6.jpg:

@@ -153,7 +153,7 @@ def fContours(img, edged):
             # 之前使用sorted对轮廓面积进行了排序，所以screenCnt会自动取轮廓面积的最大值
             break
     if screenCnt is None:
-        return img, None
+        return img
     res = cv2.drawContours(img, [screenCnt], -1, (0, 255, 0), 3)
     return res, screenCnt
 
@@ -166,6 +166,11 @@ def adaptreThre(img, size):
                                 int((140 * size) / 2) * 2 + 1, 15)
     return ret
 
+def equalHist(img):
+    # 图像灰度化并均衡化
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    ret = cv2.equalizeHist(gray)
+    return ret
 
 def getMad(s):  # 利用绝对中位差剔除异常值
     median = np.median(s)
@@ -228,6 +233,10 @@ def documentCorrection(file_path):  # 文档图像处理主函数
                                  (findPointImg.shape[1] / 1200.0) * 0.5 + 0.5)
             baiduOCRFile = saveFinalImage("梯形矫正自适应区域二值化处理结果", thFile, fileName)
             baiduOCR(baiduOCRFile, "梯形矫正自适应区域二值化处理结果")
+            # 直方图均衡化对白底文档效果不佳，不使用
+            # elFile = equalHist(findPointImg)
+            # baiduOCRFile = saveFinalImage("梯形矫正直方图均衡化处理结果", elFile, fileName)
+            # baiduOCR(baiduOCRFile, "梯形矫正直方图均衡化处理结果")
         else:
             logging.warning(file_path + "文件没有正确地轮廓识别")
     else:
